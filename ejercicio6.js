@@ -1,8 +1,7 @@
-let entrada6 = prompt("Ingrese nombres separados por coma: ");
+let entrada = prompt("Ingrese nombres separados por coma:");
 function eliminarDuplicados(arr) {
-
-    let resultado = Array.from(newSet(arr));
-    alert("Nombres sin duplicados: " + resultado.join(", "));
+  let resultado = Array.from(new Set(arr));
+  alert("Nombres sin duplicados: " + resultado.join(", "));
 }
-    let arr6 = entrada6.split(",");
-eliminarDuplicados(arr6);
+let arr = entrada.split(", ");
+eliminarDuplicados(arr);
